@@ -1,32 +1,35 @@
 <template>
+<header>
+  <h3>Alberto Blanca Alcaide</h3>
+</header>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>Presione el botón para mostrar los valores y su tipo.</p>  
     <button @click="myFunction()">Muestra</button>  
-      <p id="demo1"></p>  
+      <p v-show="this.btn_activo==true" id="demo1"></p>  
       <p id="demo2"></p>  
       <p id="demo3"></p>  
       <p id="demo4"></p>  
       <p id="demo5"></p>  
       <p id="demo6"></p>  
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
+      Este texto viene del componente HelloWorld,<br>
+      Documentación de Vue.js:
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Plugins CLI Instalados</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
     </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
+    <!-- <h3>Essential Links</h3> -->
+    <!-- <ul> -->
+      <!-- <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li> -->
+      <!-- <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li> -->
+      <!-- <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li> -->
+      <!-- <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li> -->
+      <!-- <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li> -->
+    <!-- </ul> -->
     <h3>Ecosystem</h3>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
@@ -44,6 +47,11 @@ export default {
   props: {
     msg: String
   },
+  data(){
+    return{
+      btn_activo: false
+    }
+  },
   methods:{
     myFunction(){  
       var num = 15;  
@@ -57,7 +65,8 @@ export default {
       document.getElementById("demo3").innerHTML = m+ " "+typeof m;  
       document.getElementById("demo4").innerHTML = x+ " "+typeof x;  
       document.getElementById("demo5").innerHTML = y+ " "+typeof y;  
-      document.getElementById("demo6").innerHTML = z+ " "+typeof z;  
+      document.getElementById("demo6").innerHTML = z+ " "+typeof z; 
+      this.btn_activo = false;
     }
   },
 }
