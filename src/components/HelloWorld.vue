@@ -1,6 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <p>Presione el botón para mostrar los valores y su tipo.</p>  
+    <button @click="myFunction()">Muestra</button>  
+      <p id="demo1"></p>  
+      <p id="demo2"></p>  
+      <p id="demo3"></p>  
+      <p id="demo4"></p>  
+      <p id="demo5"></p>  
+      <p id="demo6"></p>  
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,7 +43,23 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  methods:{
+    myFunction(){  
+      var num = 15;  
+      var n = num.toString();  
+      var m=parseInt(n);  
+      var x=m/2;  
+      var y=x.toString();  
+      var z=parseFloat(y);  
+      document.getElementById("demo1").innerHTML = num+ " "+typeof num;  
+      document.getElementById("demo2").innerHTML = n+ " "+typeof n;  
+      document.getElementById("demo3").innerHTML = m+ " "+typeof m;  
+      document.getElementById("demo4").innerHTML = x+ " "+typeof x;  
+      document.getElementById("demo5").innerHTML = y+ " "+typeof y;  
+      document.getElementById("demo6").innerHTML = z+ " "+typeof z;  
+    }
+  },
 }
 </script>
 
