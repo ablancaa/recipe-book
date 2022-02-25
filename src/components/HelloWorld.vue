@@ -4,14 +4,6 @@
 </header>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>Presione el botón para mostrar los valores y su tipo.</p>  
-    <button @click="myFunction()">Muestra</button>  
-      <p v-show="this.btn_activo==true" id="demo1"></p>  
-      <p id="demo2"></p>  
-      <p id="demo3"></p>  
-      <p id="demo4"></p>  
-      <p id="demo5"></p>  
-      <p id="demo6"></p>  
     <p>
       Este texto viene del componente HelloWorld,<br>
       Documentación de Vue.js:
