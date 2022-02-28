@@ -9,6 +9,7 @@
       Documentación de Vue.js:
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
+    <button @click="verObjeto">Ver Objeto</button>
     <h3>Plugins CLI Instalados</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
@@ -60,6 +61,18 @@ export default {
       document.getElementById("demo6").innerHTML = z+ " "+typeof z; 
       this.btn_activo = false;
     }
+  },
+  verObjeto(){
+    function Person(firstName, lastName) { 
+      this.firstName = firstName; 
+      this.lastName = lastName; 
+    } 
+    const member = new Person('Lydia', 'Hallie'); 
+      member.getFullName = function() { 
+      return `${this.firstName} ${this.lastName}`;
+    }; 
+
+    console.log(member.getFullName());
   },
 }
 </script>
