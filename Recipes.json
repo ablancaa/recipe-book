@@ -62,7 +62,7 @@
             "title": "Risotto",
             "image": "http://eyra.ddns.net/imagenes/Risotto.jpg",
             "servings": 4,
-            "time": "1h",
+            "time": "40m",
             "difficulty": "Hard",
             "ingredients": [
                 "Rice",
@@ -80,8 +80,8 @@
             "id": 5,
             "title": "Steak tartar",
             "image": "http://eyra.ddns.net/imagenes/steak-tartar.jpg",
-            "servings": 4,
-            "time": "1h",
+            "servings": 2,
+            "time": "20m",
             "difficulty": "Hard",
             "ingredients": [
                 "Meat",
@@ -113,6 +113,63 @@
                 "Cut Onion"
             ],
             "featured": false
-        }
+        },
+        {
+            "id": 7,
+            "title": "Paella",
+            "image": "http://eyra.ddns.net/imagenes/Paella.jpg",
+            "servings": 6,
+            "time": "2,5h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Fish",
+                "Crab",
+                "Onion"
+            ],
+            "directions": [
+                "Wash Fish",
+                "Wash Crab",
+                "Cut Onion"
+            ],
+            "featured": false
+        },
+        {
+            "id": 8,
+            "title": "Tortellini",
+            "image": "http://eyra.ddns.net/imagenes/Tortellini.jpg",
+            "servings": 3,
+            "time": "45m",
+            "difficulty": "Medium",
+            "ingredients": [
+                "Tortellini",
+                "Crab",
+                "Onion"
+            ],
+            "directions": [
+                "Wash Fish",
+                "Wash Crab",
+                "Cut Onion"
+            ],
+            "featured": false
+        },
+        {
+           "id": 9,
+           "title": "Sopa de Ajo",
+           "image": "http://eyra.ddns.net/imagenes/sopa-de-ajo.jpg",
+           "servings": 3,
+           "time": "35m",
+           "difficulty": "Easy",
+           "ingredients": [
+               "Soup",
+               "Garlyc",
+               "Onion"
+           ],
+           "directions": [
+               "Wash Fish",
+               "Wash Crab",
+               "Cut Onion"
+           ],
+           "featured": false
+       }
     ]
 }

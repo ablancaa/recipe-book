@@ -42,7 +42,7 @@
 <style>
 .recipe {
 padding: 20px;
-border: 1px solid #ccc;
+border: 1px solid #4caf50;;
 margin: 20px;
 border-radius: 4px;
 display: block;

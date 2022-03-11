@@ -21,9 +21,9 @@ import Recipe from '@/components/Recipe.vue'
 
 <style>
 .recipe-list {
-display: grid;
-width: 100%;
-grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 </style>

@@ -1,7 +1,8 @@
 <template>
+<!-- <div class="content"><SearchBar/></div> -->
     <div class="modal-container">
-        <div class="recipe-form">
-            <div class="recipe-form-header">
+        <form class="recipe-form">
+            <div class="recipe-form-header"><div class="close"> <router-link to="/"><img src="@/assets/img/close-button.svg"/></router-link></div>
                 <h2>Add a new recipe</h2>
             </div><!-- recipe-form-header -->
             <div class="recipe-form-item">
@@ -17,16 +18,49 @@
                     </select>
                 <label>Ingredients</label><input type="text"/>
                 <label>Directions</label><input type="text"/>
+                <div class="btn">
+                <button>Add Recipe</button></div>
             </div><!-- recipe-form-item -->
-        </div><!-- recipe-form -->
-        <button><img src="@/assets/img/close-button.svg"/>Add Recipe</button>
+            </form><!-- recipe-form -->
+         <RecipeList/>
     </div><!-- modal-container -->
 </template>
 
 <script>
+import RecipeJson from "/Recipes.json";
+//import SearchBar from '@/components/SearchBar.vue'
+import RecipeList from '@/components/RecipeList.vue'
     export default {
         name: 'RecipeForm',
-    }
+        components: {
+            RecipeList,
+            //SearchBar,
+        },
+        props: {
+            showModal: Boolean,
+        },
+        data() {
+            return{
+                recipes: RecipeJson.data,
+                title: '',
+                imageUrl: '',
+                servings: '',
+                time: '',
+                difficulty: ['Easy', 'Medium' , 'Hard'],
+                ingredients: '',
+                directions: '',
+                submit: '',
+            }
+        },
+        mounted(){
+
+        },
+        methods: {
+            close() {
+                this.$emit('close');
+            },
+        },
+    };
 </script>
 
 <style scoped>
@@ -87,6 +121,12 @@ border: none;
 border-radius: 4px;
 cursor: pointer;
 }
-
+.btn{
+    margin-top: 20px;
+}
+.close{
+    float: right;
+    margin-top: -20px;;
+}
 
 </style>

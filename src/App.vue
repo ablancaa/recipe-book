@@ -1,27 +1,25 @@
 <template>
   <div id="app">
-  <header class="header">
-     <img src="@/assets/img/uoc-logo.png" class="logo"/>
-     <h1 class="app-name"> Recipe book</h1>
-  </header>
+    <Header/>
     <div class="content">
-      <!-- <SearchBar/>  -->
-      <!-- <RecipeList :recipes="recipes" /> -->
       <router-view />
     </div>
+    <Footer/>
   </div><!-- FIN div app -->
 </template>
 
 <script>
 import RecipeJson from "/Recipes.json";
-//import SearchBar from './components/SearchBar.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 //import RecipeList from './components/RecipeList.vue'
 
 export default {
   name: 'App',
   components: {
     //HelloWorld,
-    //SearchBar,
+    Header,
+    Footer
     //RecipeList,
   },
   data(){
@@ -36,33 +34,24 @@ export default {
 </script>
 
 <style>
-body {
-margin: 0;
+body{
+  margin: 0;
 }
-
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-.header {
-width: 100%;
-padding: 15px;
+font-family: Avenir, Helvetica, Arial, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-align: center;
+color: #2c3e50;
 display: flex;
-align-items: center;
-border-bottom: 1px solid #ccc;
-}
-.header .logo {
-max-height: 50px;
-}
-.header .app-name {
-margin-left: 25px;
-font-weight: bold;
-font-size: 20px;
+flex-wrap: wrap;
+height: 100%;
+width: 100%;
+max-width: 1280px;
+margin: 0 auto;
 }
 
+.content{
+  margin: 0 auto;
+}
 </style>
