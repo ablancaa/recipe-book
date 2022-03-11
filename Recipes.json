@@ -98,7 +98,7 @@
         {
             "id": 6,
             "title": "Zarzuela",
-            "image": "http://eyra.ddns.net/imagenes/Zarzuela.jpg",
+            "image": "https://www.deliciosi.com/images/1900/1982/zarzuela.jpg",
             "servings": 4,
             "time": "1h",
             "difficulty": "Hard",
@@ -117,7 +117,7 @@
         {
             "id": 7,
             "title": "Paella",
-            "image": "http://eyra.ddns.net/imagenes/Paella.jpg",
+            "image": "https://dam.ngenespanol.com/wp-content/uploads/2019/09/paella-como-surgio.jpg",
             "servings": 6,
             "time": "2,5h",
             "difficulty": "Hard",
@@ -136,7 +136,7 @@
         {
             "id": 8,
             "title": "Tortellini",
-            "image": "http://eyra.ddns.net/imagenes/Tortellini.jpg",
+            "image": "https://www.cocinayvino.com/wp-content/uploads/2017/03/20-Minute-Tortellini-Pasta-Carbonara-3-1200x900.jpg",
             "servings": 3,
             "time": "45m",
             "difficulty": "Medium",
@@ -155,7 +155,7 @@
         {
            "id": 9,
            "title": "Sopa de Ajo",
-           "image": "http://eyra.ddns.net/imagenes/sopa-de-ajo.jpg",
+           "image": "https://diariodegastronomia.com/wp-content/uploads/2016/02/Sopa-de-ajo1-750x500.jpg",
            "servings": 3,
            "time": "35m",
            "difficulty": "Easy",
