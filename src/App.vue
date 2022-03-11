@@ -4,7 +4,6 @@
     <div class="content">
       <router-view />
     </div>
-    
   </div><!-- FIN div app -->
   <!-- <Footer/> -->
 </template>
