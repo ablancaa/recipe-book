@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <h5>Alberto Blanca Alcaide</h5>
+        <h5 class="font">Alberto Blanca Alcaide</h5>
     </div>
 </template>
 
@@ -16,5 +16,8 @@
     height: 50px;
     display: flex;
     background: #4caf50;
+}
+.font{
+    color:#FFF
 }
 </style>
