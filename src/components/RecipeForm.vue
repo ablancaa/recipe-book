@@ -84,6 +84,7 @@ import RecipeList from '@/components/RecipeList.vue'
     border-radius: 5px;
     }
 .recipe-form-header {
+    padding: auto;
 }
 .recipe-form-header button {
     position: absolute;
