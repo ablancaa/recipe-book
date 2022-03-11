@@ -18,6 +18,7 @@
     background: #4caf50;
 }
 .font{
-    color:#FFF
+    color:#FFF;
+    margin-left: 25px;
 }
 </style>
