@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"title": "Spaghetti",
-			"image": "./src/assets/img//Espaguetis.jpg",
+			"image": "https://grecipes.s3.amazonaws.com/recipe_picture/1618081/uploads_20200204T2329Z_ace8a4529b49f9a2c4129e343e4fac2b_1576681061599.jpg",
 			"servings": 4,
 			"time": "30m",
 			"difficulty": "Easy",
