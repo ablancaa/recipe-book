@@ -22,7 +22,7 @@
         {
             "id": 2,
             "title": "Pizza",
-            "image": "http://eyra.ddns.net/imagenes/pizza.jpg",
+            "image": "https://s03.s3c.es/imag/_v0/770x420/a/a/6/pizza-dia-mundial-mejores-ocu-istock.jpg",
             "servings": 6,
             "time": "15m",
             "difficulty": "Medium",
@@ -41,7 +41,7 @@
         {
             "id": 3,
             "title": "Salad",
-            "image": "http://eyra.ddns.net/imagenes/Ensalda.jpg",
+            "image": "https://www.comedera.com/wp-content/uploads/2021/09/ensalada-verde-con-guisantes.jpg",
             "servings": 4,
             "time": "1h",
             "difficulty": "Hard",
