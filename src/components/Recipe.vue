@@ -1,34 +1,30 @@
 <template>
-        <header>
-            <img src="@/assets/img/uoc-logo.png"/>
-            <h1>Recipe book</h1>
-        </header>
         <div class="recipe">
-            <button class="delete-recipe"><img src="@/assets/img/delete-button.svg"/></button>
-            <h2 class=".recipe-title">Spaghetti</h2>
-            <div class="recipe-image"><img src="@/assets/img/macarrones.jpeg"/></div>
+            <button class="delete-recipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
+            <h2 class=".recipe-title">{{ recipe.title }}</h2>
+            <div class="recipe-image"><img :src="recipe.image"/></div>
                 <div class="recipe-info-item">
-                    <span class="recipe-info-label"> Servings </span>
-                    <span class="recipe-info-value"> 4 </span>
-                    <span class="recipe-info-label"> Time </span>
-                    <span class="recipe-info-value"> 30' </span>
-                    <span class="recipe-info-label"> Difficulty </span>
-                    <span class="recipe-info-value"> Easy </span>
+                    <span class="recipe-info-label"> Servings:</span>
+                    <span class="recipe-info-value"> {{ recipe.servings }} </span>
+                    <span class="recipe-info-label"> Time:</span>
+                    <span class="recipe-info-value"> {{ recipe.time }}</span>
+                    <span class="recipe-info-label"> Difficulty:</span>
+                    <span class="recipe-info-value"> {{ recipe.difficulty }}</span>
                 </div>
             <div class="recipe-ingredients">
                 <h3 class="recipe-ingredients-title">Ingredientes</h3>
                 <ul class="recipe-ingredients-list">
-                    <li>noodles</li>
-                    <li>tomato sauce</li>
-                    <li>cheese</li>
+                    <li>{{ recipe.ingredients[0] }}</li>
+                    <li>{{ recipe.ingredients[1] }}</li>
+                    <li>{{ recipe.ingredients[2] }}</li>
                 </ul>
             </div>
             <div class="recipe-directions">
                 <h3 class="recipe-directions-title">Directions</h3>
                 <ol class="recipe-directions-list">
-                    <li>boil noodles</li>
-                    <li>cook noodles</li>
-                    <li>eat noodles</li>
+                    <li>{{ recipe.directions[0] }}</li>
+                    <li>{{ recipe.directions[1] }}</li>
+                    <li>{{ recipe.directions[2] }}</li>
                 </ol>
             </div>
         </div> <!-- Fin receta -->
@@ -38,7 +34,7 @@
     export default {  
         name: 'Receta-1',
         props: {
-            objeto: Array,
+            recipe: Object,
         }
       }
 </script>

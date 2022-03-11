@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-  <header class="header">
-     <img src="@/assets/img/uoc-logo.png" class="logo"/>
-     <h1 class="app-name"> Recipe book</h1>
-  </header>
-    <div class="content">
-      <!-- <SearchBar/>  -->
-      <!-- <RecipeList :recipes="recipes" /> -->
-      <router-view />
-    </div>
-  </div><!-- FIN div app -->
+  <!-- <header class="header"> -->
+     <!-- <img src="@/assets/img/uoc-logo.png" class="logo"/> -->
+     <!-- <h1 class="app-name"> Recipe book</h1> -->
+  <!-- </header> -->
+    <!-- <div class="content"> -->
+    <SearchBar/>
+    <RecipeList :recipes="recipes" />
+    <!-- </div> -->
 </template>
 
 <script>
 import RecipeJson from "/Recipes.json";
-//import SearchBar from './components/SearchBar.vue'
-//import RecipeList from './components/RecipeList.vue'
+import SearchBar from '@/components/SearchBar.vue'
+import RecipeList from '@/components/RecipeList.vue'
 
 export default {
-  name: 'App',
+  name: 'Home-1',
   components: {
     //HelloWorld,
-    //SearchBar,
-    //RecipeList,
+    SearchBar,
+    RecipeList,
   },
   data(){
     return{

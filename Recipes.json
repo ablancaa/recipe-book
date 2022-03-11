@@ -1,0 +1,118 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"title": "Spaghetti",
+			"image": "http://eyra.ddns.net/imagenes/Espaguetis.jpg",
+			"servings": 4,
+			"time": "30m",
+			"difficulty": "Easy",
+			"ingredients": [
+                "Noodles",
+                "Tomato sauce",
+                "Cheese"
+            ],
+			"directions": [
+                "Boil noodles",
+                "Cook noodles",
+                "Eat noodles"
+            ],
+            "featured": false
+		},
+        {
+            "id": 2,
+            "title": "Pizza",
+            "image": "http://eyra.ddns.net/imagenes/pizza.jpg",
+            "servings": 6,
+            "time": "15m",
+            "difficulty": "Medium",
+            "ingredients": [
+                "Dough",
+                "Tomato sauce",
+                "Cheese"
+            ],
+            "directions": [
+                "Boil dough",
+                "Cook dough",
+                "Eat pizza"
+            ],
+            "featured": false
+        },
+        {
+            "id": 3,
+            "title": "Salad",
+            "image": "http://eyra.ddns.net/imagenes/Ensalda.jpg",
+            "servings": 4,
+            "time": "1h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Lettuce",
+                "Tomato",
+                "Cheese"
+            ],
+            "directions": [
+                "Cut lettuce",
+                "Cut tomato",
+                "Cut cheese"
+            ],
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Risotto",
+            "image": "http://eyra.ddns.net/imagenes/Risotto.jpg",
+            "servings": 4,
+            "time": "1h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Rice",
+                "Funghi",
+                "Cheese"
+            ],
+            "directions": [
+                "Wash rice",
+                "Wash funghi",
+                "Cut cheese"
+            ],
+            "featured": false
+        },
+                {
+            "id": 5,
+            "title": "Steak tartar",
+            "image": "http://eyra.ddns.net/imagenes/steak-tartar.jpg",
+            "servings": 4,
+            "time": "1h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Meat",
+                "Garlic",
+                "Parsley"
+            ],
+            "directions": [
+                "Cut meat",
+                "Wash parsley",
+                "Cut garlic"
+            ],
+            "featured": false
+        },
+        {
+            "id": 6,
+            "title": "Zarzuela",
+            "image": "http://eyra.ddns.net/imagenes/Zarzuela.jpg",
+            "servings": 4,
+            "time": "1h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Fish",
+                "Crab",
+                "Onion"
+            ],
+            "directions": [
+                "Wash Fish",
+                "Wash Crab",
+                "Cut Onion"
+            ],
+            "featured": false
+        }
+    ]
+}

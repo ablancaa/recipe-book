@@ -1,0 +1,92 @@
+<template>
+    <div class="modal-container">
+        <div class="recipe-form">
+            <div class="recipe-form-header">
+                <h2>Add a new recipe</h2>
+            </div><!-- recipe-form-header -->
+            <div class="recipe-form-item">
+                <label>Title</label><input type="text"/>
+                <label>Image URL</label><input type="text"/>
+                <label>Servings</label><input type="text"/>
+                <label>Time</label><input type="text"/>
+                <label>Difficulty</label>
+                    <select>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                <label>Ingredients</label><input type="text"/>
+                <label>Directions</label><input type="text"/>
+            </div><!-- recipe-form-item -->
+        </div><!-- recipe-form -->
+        <button><img src="@/assets/img/close-button.svg"/>Add Recipe</button>
+    </div><!-- modal-container -->
+</template>
+
+<script>
+    export default {
+        name: 'RecipeForm',
+    }
+</script>
+
+<style scoped>
+.modal-container {
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:10;
+    }
+.recipe-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%; 
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    }
+.recipe-form-header {
+}
+.recipe-form-header button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: 0;
+    padding:0;
+    cursor:pointer;
+    }
+.recipe-form-header button img {
+    width: 20px;
+    }
+.recipe-form-item {
+    margin-bottom: 20px;
+    }
+.recipe-form-item label {
+    display: block;
+    font-weight:bold;
+    margin-bottom: 5px;
+    }
+.recipe-form-item input,.recipe-form-item select {
+width:100%;
+padding:10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+max-width: 300px;
+}
+
+.recipe-form-item button {
+background: #4caf50;
+color: #fff;
+padding: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+
+</style>
