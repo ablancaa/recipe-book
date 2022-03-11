@@ -4,14 +4,15 @@
     <div class="content">
       <router-view />
     </div>
-    <Footer/>
+    
   </div><!-- FIN div app -->
+  <!-- <Footer/> -->
 </template>
 
 <script>
 import RecipeJson from "/Recipes.json";
 import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+// import Footer from './components/Footer.vue'
 //import RecipeList from './components/RecipeList.vue'
 
 export default {
@@ -19,7 +20,7 @@ export default {
   components: {
     //HelloWorld,
     Header,
-    Footer
+    //Footer
     //RecipeList,
   },
   data(){
