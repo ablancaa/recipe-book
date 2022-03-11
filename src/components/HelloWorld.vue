@@ -1,6 +1,6 @@
 <template>
 <header>
-  <h3>Alberto Blanca Alcaide</h3>
+  <h3>{{ nombre }}</h3>
 </header>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -38,7 +38,8 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+    nombre: String
   },
   data(){
     return{
