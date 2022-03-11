@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"title": "Spaghetti",
-			"image": "src/assets/img//Espaguetis.jpg",
+			"image": "./src/assets/img//Espaguetis.jpg",
 			"servings": 4,
 			"time": "30m",
 			"difficulty": "Easy",
