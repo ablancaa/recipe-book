@@ -22,26 +22,18 @@
                 <button>Add Recipe</button></div>
             </div><!-- recipe-form-item -->
             </form><!-- recipe-form -->
-         <RecipeList/>
+       <!--<RecipeList/>-->
     </div><!-- modal-container -->
 </template>
 
 <script>
-import RecipeJson from "/Recipes.json";
-//import SearchBar from '@/components/SearchBar.vue'
-import RecipeList from '@/components/RecipeList.vue'
     export default {
         name: 'RecipeForm',
         components: {
-            RecipeList,
-            //SearchBar,
         },
-        props: {
-            showModal: Boolean,
-        },
+      props: { },
         data() {
             return{
-                recipes: RecipeJson.data,
                 title: '',
                 imageUrl: '',
                 servings: '',
@@ -52,13 +44,11 @@ import RecipeList from '@/components/RecipeList.vue'
                 submit: '',
             }
         },
-        mounted(){
-
-        },
+        mounted(){},
         methods: {
-            close() {
+           /* close() {
                 this.$emit('close');
-            },
+            },*/
         },
     };
 </script>

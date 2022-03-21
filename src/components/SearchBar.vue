@@ -2,10 +2,10 @@
     <div class="search">
         <input type="text" placeholder="Search for a recipe"/>
         <button @click="showModal = true" class="button">Add a new recipe</button>
-        <modal v-if="showModal">
-            <RecipeForm @close="showModal = false" />
-        </modal>
-    </div>
+            <modal v-if="showModal"><!-- Hace que aparezca un ventana modal encima de la vista -->
+                <RecipeForm @close="showModal = false" />
+            </modal>
+    </div><!-- Fin search -->
 </template>
 
 <script>
