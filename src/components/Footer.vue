@@ -15,7 +15,7 @@
     width: 100%;
     height: 50px;
     display: flex;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;;
     background: #4caf50;
 }
 .font{
