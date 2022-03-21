@@ -2,7 +2,10 @@
 <!-- <div class="content"><SearchBar/></div> -->
     <div class="modal-container">
         <form class="recipe-form">
-            <div class="recipe-form-header"><div class="close"> <button @click="$emit('close')"><img src="@/assets/img/close-button.svg"/></button></div>
+            <div class="recipe-form-header">
+                <div class="close">
+                    <button @click="$emit('close')"><img src="@/assets/img/close-button.svg"/></button>
+                </div><!-- close -->
                 <h2>Add a new recipe</h2>
             </div><!-- recipe-form-header -->
             <div class="recipe-form-item">
