@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <h5 class="font">Alberto Blanca Alcaide - UOC 2022 - Programación Web Avanzada</h5>
+        <h5 class="font">Alberto Blanca Alcaide - UOC 2022 - Programación Web Avanzada - PAC 2</h5>
     </div>
 </template>
 
