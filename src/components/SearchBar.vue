@@ -1,15 +1,20 @@
 <template>
     <div class="search">
         <input type="text" placeholder="Search for a recipe"/>
-        <button @click="showModal = true" class="button"><router-link to="RecipeForm" class="routerLink">Add a new recipe</router-link></button>
+        <button @click="showModal = true" class="button">Add a new recipe</button>
+        <modal v-if="showModal">
+            <RecipeForm @close="showModal = false" />
+        </modal>
     </div>
 </template>
 
 <script>
-//import RecipeForm from './RecipeForm'
+import RecipeForm from './RecipeForm'
 export default {
-  components: {},
-        name: 'SearchBar',
+  components: { 
+      RecipeForm 
+    },
+    name: 'SearchBar',
         data(){
             return {
                 showModal: false
