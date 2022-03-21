@@ -1,0 +1,175 @@
+{
+	"data": [
+		{
+			"id": 1,
+			"title": "Spaghetti",
+			"image": "https://grecipes.s3.amazonaws.com/recipe_picture/1618081/uploads_20200204T2329Z_ace8a4529b49f9a2c4129e343e4fac2b_1576681061599.jpg",
+			"servings": 4,
+			"time": "30m",
+			"difficulty": "Easy",
+			"ingredients": [
+                "Noodles",
+                "Tomato sauce",
+                "Cheese"
+            ],
+			"directions": [
+                "Boil noodles",
+                "Cook noodles",
+                "Eat noodles"
+            ],
+            "featured": false
+		},
+        {
+            "id": 2,
+            "title": "Pizza",
+            "image": "https://s03.s3c.es/imag/_v0/770x420/a/a/6/pizza-dia-mundial-mejores-ocu-istock.jpg",
+            "servings": 6,
+            "time": "15m",
+            "difficulty": "Medium",
+            "ingredients": [
+                "Dough",
+                "Tomato sauce",
+                "Cheese"
+            ],
+            "directions": [
+                "Boil dough",
+                "Cook dough",
+                "Eat pizza"
+            ],
+            "featured": false
+        },
+        {
+            "id": 3,
+            "title": "Salad",
+            "image": "https://www.comedera.com/wp-content/uploads/2021/09/ensalada-verde-con-guisantes.jpg",
+            "servings": 4,
+            "time": "1h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Lettuce",
+                "Tomato",
+                "Cheese"
+            ],
+            "directions": [
+                "Cut lettuce",
+                "Cut tomato",
+                "Cut cheese"
+            ],
+            "featured": false
+        },
+        {
+            "id": 4,
+            "title": "Risotto",
+            "image": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-receta-risotto-champi%C3%B1ones-queso-risotto-champi%C3%B1ones-queso-receta-risotto-risotto-2-848x477.jpg",
+            "servings": 4,
+            "time": "40m",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Rice",
+                "Funghi",
+                "Cheese"
+            ],
+            "directions": [
+                "Wash rice",
+                "Wash funghi",
+                "Cut cheese"
+            ],
+            "featured": false
+        },
+                {
+            "id": 5,
+            "title": "Steak tartar",
+            "image": "https://placergastronomico.es/wp-content/uploads/2019/03/Portada-Ps.jpg",
+            "servings": 2,
+            "time": "20m",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Meat",
+                "Garlic",
+                "Parsley"
+            ],
+            "directions": [
+                "Cut meat",
+                "Wash parsley",
+                "Cut garlic"
+            ],
+            "featured": false
+        },
+        {
+            "id": 6,
+            "title": "Zarzuela",
+            "image": "https://www.deliciosi.com/images/1900/1982/zarzuela.jpg",
+            "servings": 4,
+            "time": "3,2h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Fish",
+                "Crab",
+                "Onion"
+            ],
+            "directions": [
+                "Wash Fish",
+                "Wash Crab",
+                "Cut Onion"
+            ],
+            "featured": false
+        },
+        {
+            "id": 7,
+            "title": "Paella",
+            "image": "https://dam.ngenespanol.com/wp-content/uploads/2019/09/paella-como-surgio.jpg",
+            "servings": 6,
+            "time": "2,5h",
+            "difficulty": "Hard",
+            "ingredients": [
+                "Fish",
+                "Crab",
+                "Onion"
+            ],
+            "directions": [
+                "Wash Fish",
+                "Wash Crab",
+                "Cut Onion"
+            ],
+            "featured": false
+        },
+        {
+            "id": 8,
+            "title": "Tortellini",
+            "image": "https://www.cocinayvino.com/wp-content/uploads/2017/03/20-Minute-Tortellini-Pasta-Carbonara-3-1200x900.jpg",
+            "servings": 3,
+            "time": "45m",
+            "difficulty": "Medium",
+            "ingredients": [
+                "Tortellini",
+                "Crab",
+                "Onion"
+            ],
+            "directions": [
+                "Wash Fish",
+                "Wash Crab",
+                "Cut Onion"
+            ],
+            "featured": false
+        },
+        {
+           "id": 9,
+           "title": "Sopa de Ajo",
+           "image": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/10C8FDD0-525D-4B15-80EA-BD6AA713BA39/Derivates/44BE5436-9941-4141-825B-B1E1C0BA566D.jpg",
+           "servings": 3,
+           "time": "35m",
+           "difficulty": "Easy",
+           "ingredients": [
+               "Soup",
+               "Garlyc",
+               "Onion"
+           ],
+           "directions": [
+               "Wash Fish",
+               "Wash Crab",
+               "Cut Onion"
+           ],
+           "featured": false
+       }
+    ]
+}

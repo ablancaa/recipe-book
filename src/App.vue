@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import RecipeJson from "/Recipes.json";
+import RecipeJson from "@/json/Recipes.json";
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 //import RecipeList from './components/RecipeList.vue'
