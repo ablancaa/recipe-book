@@ -1,5 +1,5 @@
 <template>
-        <div class="recipe" :class="{ featured: recipe.featured}">
+        <div class="recipe" :class="{ featured: recipe.featured }">
             <button class="delete-recipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
             <h2 class=".recipe-title">{{ recipe.title }}</h2>
             <!-- <p>{{ recipe.featured }}</p> -->
