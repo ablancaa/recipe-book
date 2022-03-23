@@ -55,7 +55,7 @@
                 "Cut tomato",
                 "Cut cheese"
             ],
-            "featured": false
+            "featured": true
         },
         {
             "id": 4,
