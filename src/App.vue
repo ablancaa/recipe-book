@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import RecipeJson from "@/json/Recipes.json";
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
@@ -20,13 +19,9 @@ export default {
     Footer
   },
   data(){
-    return{
-      recipes: RecipeJson.data,
-    }
+    return{}
   },
-  methods(){
-
-  },
+  methods(){},
 }
 </script>
 
