@@ -93,7 +93,7 @@
                 "Wash parsley",
                 "Cut garlic"
             ],
-            "featured": false
+            "featured": true
         },
         {
             "id": 6,
@@ -131,7 +131,7 @@
                 "Wash Crab",
                 "Cut Onion"
             ],
-            "featured": false
+            "featured": true
         },
         {
             "id": 8,
@@ -150,7 +150,7 @@
                 "Wash Crab",
                 "Cut Onion"
             ],
-            "featured": true
+            "featured": false
         },
         {
            "id": 9,
@@ -169,7 +169,7 @@
                "Wash Crab",
                "Cut Onion"
            ],
-           "featured": false
+           "featured": true
        }
     ]
 }

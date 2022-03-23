@@ -6,14 +6,20 @@
             <h2 class=".recipe-title">{{ recipe.title }}</h2>
             <!-- <p>{{ recipe.featured }}</p> -->
             <div class="recipe-image"><img :src="recipe.image"/></div>
+            <div class="recipe-info">
                 <div class="recipe-info-item">
                     <span class="recipe-info-label"> Servings:</span>
                     <span class="recipe-info-value"> {{ recipe.servings }} </span>
+                </div>
+                <div class="recipe-info-item">
                     <span class="recipe-info-label"> Time:</span>
                     <span class="recipe-info-value"> {{ recipe.time }}</span>
+                </div>
+                 <div class="recipe-info-item">
                     <span class="recipe-info-label"> Difficulty:</span>
                     <span class="recipe-info-value"> {{ recipe.difficulty }}</span>
                 </div>
+             </div> <!-- fin recipe info -->
             <div class="recipe-ingredients">
                 <h3 class="recipe-ingredients-title">Ingredientes</h3>
                 <ul class="recipe-ingredients-list">
@@ -57,8 +63,8 @@ position: relative;
 }
 .recipe.featured {
 background-color: #f5f5f5;
-/* background-color: #f76c6c; */
 }
+
 .recipe-title {
 font-weight: bold;
 font-size: 28px;
