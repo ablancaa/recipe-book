@@ -1,7 +1,8 @@
 <template>
-        <div class="recipe">
+        <div class="recipe" :class="{ featured: recipe.featured}">
             <button class="delete-recipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
             <h2 class=".recipe-title">{{ recipe.title }}</h2>
+            <!-- <p>{{ recipe.featured }}</p> -->
             <div class="recipe-image"><img :src="recipe.image"/></div>
                 <div class="recipe-info-item">
                     <span class="recipe-info-label"> Servings:</span>
@@ -35,8 +36,12 @@
         name: 'Receta-1',
         props: {
             recipe: Object,
-        }
-      }
+        },
+        data() {
+            return{
+            }
+        },
+      };
 </script>
 
 <style>
@@ -50,6 +55,7 @@ position: relative;
 }
 .recipe.featured {
 background-color: #f5f5f5;
+/* background-color: #f76c6c; */
 }
 .recipe-title {
 font-weight: bold;

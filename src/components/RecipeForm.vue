@@ -37,6 +37,7 @@
       props: { },
         data() {
             return{
+                destacada: true,
                 title: '',
                 imageUrl: '',
                 servings: '',

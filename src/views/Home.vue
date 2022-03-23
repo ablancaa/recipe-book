@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import RecipeJson from "/Recipes.json";
+import RecipeJson from "@/json/Recipes.json";
 import SearchBar from '@/components/SearchBar.vue'
 import RecipeList from '@/components/RecipeList.vue'
 

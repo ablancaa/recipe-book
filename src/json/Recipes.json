@@ -17,7 +17,7 @@
                 "Cook noodles",
                 "Eat noodles"
             ],
-            "featured": false
+            "featured": true
 		},
         {
             "id": 2,
@@ -150,7 +150,7 @@
                 "Wash Crab",
                 "Cut Onion"
             ],
-            "featured": false
+            "featured": true
         },
         {
            "id": 9,
