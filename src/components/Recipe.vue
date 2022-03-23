@@ -1,6 +1,8 @@
 <template>
         <div class="recipe" :class="{ featured: recipe.featured }">
+            <div class="estrella-recipe" v-show="recipe.featured"><img src="@/assets/ico/estrella.png" /></div>
             <button class="delete-recipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
+            
             <h2 class=".recipe-title">{{ recipe.title }}</h2>
             <!-- <p>{{ recipe.featured }}</p> -->
             <div class="recipe-image"><img :src="recipe.image"/></div>
@@ -107,4 +109,16 @@ cursor: pointer;
 width: 20px;
 }
 
+.estrella-recipe {
+position: absolute;
+top: -30px;
+left:-30px;
+background: transparent;
+border: 0;
+padding: 0;
+cursor: pointer;
+}
+.estrella-recipe img {
+width: 100px;
+}
 </style>
