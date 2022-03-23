@@ -1,11 +1,11 @@
 <template>
-<div class="content"><SearchBar/></div>
-    <div id="app">
+<SearchBar/>
+    
         <div class="content">
         <h1>Not Found</h1>
         <router-link to="/">Home</router-link>
         </div>
-    </div>
+   
 </template>
 
 <script>
