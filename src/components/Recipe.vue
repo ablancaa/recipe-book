@@ -23,17 +23,17 @@
             <div class="recipe-ingredients">
                 <h3 class="recipe-ingredients-title">Ingredientes</h3>
                 <ul class="recipe-ingredients-list">
-                    <li>{{ recipe.ingredients[0] }}</li>
-                    <li>{{ recipe.ingredients[1] }}</li>
-                    <li>{{ recipe.ingredients[2] }}</li>
+                    <li v-for="ingredients in recipe.ingredients" :key="ingredients.ingredients">{{ ingredients }}</li>
+                    <!-- <li>{{ recipe.ingredients[1] }}</li> -->
+                    <!-- <li>{{ recipe.ingredients[2] }}</li> -->
                 </ul>
             </div>
             <div class="recipe-directions">
                 <h3 class="recipe-directions-title">Directions</h3>
                 <ol class="recipe-directions-list">
-                    <li>{{ recipe.directions[0] }}</li>
-                    <li>{{ recipe.directions[1] }}</li>
-                    <li>{{ recipe.directions[2] }}</li>
+                    <li v-for="directions in recipe.directions" :key="directions.directions">{{ directions }}</li>
+                    <!-- <li>{{ recipe.directions[1] }}</li> -->
+                    <!-- <li>{{ recipe.directions[2] }}</li> -->
                 </ol>
             </div>
         </div> <!-- Fin receta -->
