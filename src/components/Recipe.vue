@@ -118,13 +118,13 @@ width: 20px;
 .estrella-recipe {
 position: absolute;
 top: -30px;
-left:-38px;
+left:-32px;
 background: transparent;
 border: 0;
 padding: 0;
 cursor: pointer;
 }
 .estrella-recipe img {
-width: 100px;
+width: 90px;
 }
 </style>
