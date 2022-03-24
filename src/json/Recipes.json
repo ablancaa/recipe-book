@@ -36,6 +36,7 @@
             "directions": [
                 "Boil dough",
                 "Cook dough",
+		"Cut pizza",
                 "Eat pizza"
             ],
             "featured": ""
@@ -76,7 +77,8 @@
             "directions": [
                 "Wash rice",
                 "Wash funghi",
-                "Cut cheese"
+                "Cut cheese",
+		"Cut Onion"
             ],
             "featured": false
         },
