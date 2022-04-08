@@ -6,7 +6,9 @@
         </div>
         <button @click="showModal = true" class="button">Add a new recipe</button>
             <modal v-if="showModal"><!-- Hace que aparezca un ventana modal encima de la vista -->
+                <transition>
                 <RecipeForm @close="showModal = false" />
+                </transition>
             </modal>
     </div><!-- Fin search -->
 </template>
