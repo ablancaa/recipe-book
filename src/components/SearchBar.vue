@@ -2,7 +2,14 @@
     <div class="search">
         <div>
         <input type="text" placeholder="Search for a recipe"/>
-        <button v-show="true"><inpunt value="true">Clear Search</inpunt></button>
+        <button v-show="true">
+            <inpunt  
+                id="title"
+                v-model="title"
+                type="text"
+                name="name">Clear Search
+            </inpunt>
+        </button>
         </div>
         <button @click="showModal = true" class="button">Add a new recipe</button>
             <modal v-if="showModal"><!-- Hace que aparezca un ventana modal encima de la vista -->
@@ -34,6 +41,9 @@ export default {
             /* Aquest mètode s'encarregarà de buidar l'element input del camp de cerca.
             S’haurà d’executar quan es faci clic al botó “Clear Search”.*/
             clearSearch(){
+                if (this.title == true){
+                    console.log("hola");
+                }
                
             },
             /*Aquest mètode s'executarà cada vegada que es modifiqui l'element

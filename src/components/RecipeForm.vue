@@ -4,9 +4,12 @@
         <form class="recipe-form">
             <div class="recipe-form-header">
                 <div class="close">
-                    <button @click="$emit('close')"><img src="@/assets/img/close-button.svg"/></button>
+                    <button @click="close"><img src="@/assets/img/close-button.svg"/></button>
                 </div><!-- close -->
                 <h2>Add a new recipe</h2>
+                <div id="error">
+                    <p>{{this.mensajeError}}</p>
+                </div>
             </div><!-- recipe-form-header -->
             <div class="recipe-form-item">
                 <label>Title</label><input type="text"/>
@@ -23,7 +26,7 @@
                 <label>Directions</label><input type="textarea"/>
                 <label>Featured</label><input type="checkbox"/>
                 <div class="btn">
-                <button>Add Recipe</button></div>
+                <button @click="createRecipe">Add Recipe</button></div>
             </div><!-- recipe-form-item -->
             </form><!-- recipe-form -->
        <!--<RecipeList/>-->
@@ -47,30 +50,33 @@
                 ingredients: '',
                 directions: '',
                 submit: '',
+                mensajeError: '',
             }
         },
         mounted(){},
         methods: {
- /*  Aquest mètode ha d'executar-se quan es faci el submit del formulari, és a
-dir, l'usuari faci click al botó Add Recipe, i s'encarregarà de:
-○ Comprovar que els camps title, ingredients i directions no estan buits. Si són buits
-haureu de mostrar el missatge d'error prèviament descrit i no emetre la recepta.
-○ Separar el contingut dels camps ingredients i directions pel caràcter . (punt) i
-afegir-los a un array.
-○ Crear un objecte (recipe) amb la informació guardada al formulari i els arrays
-d'ingredients i directions..
-○ Emetre un esdeveniment add-recipe amb l'objecte creat.
-○ Esborrar els camps del formulari.*/
+            /*  Aquest mètode ha d'executar-se quan es faci el submit del formulari, és a
+            dir, l'usuari faci click al botó Add Recipe, i s'encarregarà de:
+            ○ Comprovar que els camps title, ingredients i directions no estan buits. Si són buits
+                haureu de mostrar el missatge d'error prèviament descrit i no emetre la recepta.
+            ○ Separar el contingut dels camps ingredients i directions pel caràcter . (punt) i
+                afegir-los a un array.
+            ○ Crear un objecte (recipe) amb la informació guardada al formulari i els arrays
+                d'ingredients i directions..
+            ○ Emetre un esdeveniment add-recipe amb l'objecte creat.
+            ○ Esborrar els camps del formulari.*/
             createRecipe(){
-
+                if(this.title == ''){
+                    console.log("Titulo vacio!!");
+                    this.mensajeError='El título está vacío';
+                }
             },
+            /*Aquest mètode s'ha d'executar quan es faci clic al botó que conté el svg amb
+            el símbol X. S'encarregarà de:
+                ○ Emetre un esdeveniment close-modal */
             closeForm(){
-
-            }
-           /* close() 
-           {
                 this.$emit('close');
-            },*/
+            }
         },
     };
 </script>

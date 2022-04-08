@@ -17,7 +17,9 @@ export default {
   data(){
     return{
       recipes: RecipeJson.data,
+      showModal: false,
     }
+    
   },
   methods(){
 
