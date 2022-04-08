@@ -1,5 +1,4 @@
 <template>
-<!-- <div class="content"><SearchBar/></div> -->
     <div class="modal-container">
         <form class="recipe-form">
             <div class="recipe-form-header">
@@ -12,7 +11,11 @@
                 </div>
             </div><!-- recipe-form-header -->
             <div class="recipe-form-item">
-                <label>Title</label><input type="text"/>
+                <label>Title</label>
+                <input 
+                    v-model="title" 
+                    type="text"
+                    />
                 <label>Image URL</label><input type="text"/>
                 <label>Servings</label><input type="text"/>
                 <label>Time</label><input type="text"/>
@@ -69,6 +72,8 @@
                 if(this.title == ''){
                     console.log("Titulo vacio!!");
                     this.mensajeError='El título está vacío';
+                } else {
+                    console.log("Titulo: "+this.title);
                 }
             },
             /*Aquest mètode s'ha d'executar quan es faci clic al botó que conté el svg amb
