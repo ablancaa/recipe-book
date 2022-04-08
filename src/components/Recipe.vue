@@ -1,7 +1,7 @@
 <template>
         <div class="recipe" :class="{ featured: recipe.featured }">
             <div class="estrella-recipe" v-show="recipe.featured"><img src="@/assets/ico/estrella.png" /></div>
-            <button class="delete-recipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
+            <button class="delete-recipe" @click="deleteRecipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
             
             <h2 class=".recipe-title">{{ recipe.title }}</h2>
             <!-- <p>{{ recipe.featured }}</p> -->
@@ -49,6 +49,12 @@
             return{
             }
         },
+        methods: {
+            deleteRecipe () {
+                this.$emit("deleteRecipe");
+                console.log(this.recipe.id);
+            },
+        }
       };
 </script>
 

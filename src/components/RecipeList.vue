@@ -12,10 +12,14 @@ import Recipe from '@/components/Recipe.vue'
         name: 'RecipeList-1',
         components: { Recipe },
         props: { recipes: Array },
-    data(){
-        return{
-        }
-},
+        
+        data(){
+            return{
+            }
+        },
+        methods:{
+            
+        },
     }
 </script>
 

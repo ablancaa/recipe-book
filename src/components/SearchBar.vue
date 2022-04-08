@@ -1,6 +1,9 @@
 <template>
     <div class="search">
+        <div>
         <input type="text" placeholder="Search for a recipe"/>
+        <button v-show="true"><inpunt value="true">Clear Search</inpunt></button>
+        </div>
         <button @click="showModal = true" class="button">Add a new recipe</button>
             <modal v-if="showModal"><!-- Hace que aparezca un ventana modal encima de la vista -->
                 <RecipeForm @close="showModal = false" />
@@ -19,7 +22,25 @@ export default {
             return {
                 showModal: false
             }
-        } 
+        },
+        methods:{
+            /*Aquest mètode s'encarregarà d'emetre un esdeveniment show-form. S’haurà
+            d’executar quan es faci clic al botó “Add a new recipe”.*/
+            showForm(){
+
+            },
+            /* Aquest mètode s'encarregarà de buidar l'element input del camp de cerca.
+            S’haurà d’executar quan es faci clic al botó “Clear Search”.*/
+            clearSearch(){
+               
+            },
+            /*Aquest mètode s'executarà cada vegada que es modifiqui l'element
+            input del camp de cerca (cada vegada que es teclegi una lletra). Emetrà un esdeveniment
+            'search' amb el contingut del camp de cerca*/
+            search(newVal){
+                 console.log(newVal);
+            }
+        }
     }
 </script>
 
@@ -35,9 +56,10 @@ display: flex;
 align-items: center;
 border-bottom: 1px solid #4caf50;
 margin-bottom: 25px;
+justify-content: space-between;
 }
 .search input {
-width: 100%;
+width: 500px;
 padding: 10px;
 border: 1px solid #ccc;
 border-radius: 4px;

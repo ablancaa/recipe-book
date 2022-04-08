@@ -19,8 +19,9 @@
                         <option>Medium</option>
                         <option>Hard</option>
                     </select>
-                <label>Ingredients</label><input type="text"/>
-                <label>Directions</label><input type="text"/>
+                <label>Ingredients</label><input type="textarea"/>
+                <label>Directions</label><input type="textarea"/>
+                <label>Featured</label><input type="checkbox"/>
                 <div class="btn">
                 <button>Add Recipe</button></div>
             </div><!-- recipe-form-item -->
@@ -50,7 +51,24 @@
         },
         mounted(){},
         methods: {
-           /* close() {
+ /*  Aquest mètode ha d'executar-se quan es faci el submit del formulari, és a
+dir, l'usuari faci click al botó Add Recipe, i s'encarregarà de:
+○ Comprovar que els camps title, ingredients i directions no estan buits. Si són buits
+haureu de mostrar el missatge d'error prèviament descrit i no emetre la recepta.
+○ Separar el contingut dels camps ingredients i directions pel caràcter . (punt) i
+afegir-los a un array.
+○ Crear un objecte (recipe) amb la informació guardada al formulari i els arrays
+d'ingredients i directions..
+○ Emetre un esdeveniment add-recipe amb l'objecte creat.
+○ Esborrar els camps del formulari.*/
+            createRecipe(){
+
+            },
+            closeForm(){
+
+            }
+           /* close() 
+           {
                 this.$emit('close');
             },*/
         },
