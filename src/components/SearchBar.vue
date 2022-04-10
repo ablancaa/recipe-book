@@ -4,19 +4,19 @@
         <input type="text" placeholder="Search for a recipe"/>
         <button v-show="true">
             <inpunt  
-                id="title"
+                id="areaSearch"
                 v-model="title"
                 type="text"
                 name="name">Clear Search
             </inpunt>
         </button>
         </div>
-        <button @click="showModal = true" class="button">Add a new recipe</button>
+       <button @click="showModal = true" class="button">Add a new recipe</button>
             <modal v-if="showModal"><!-- Hace que aparezca un ventana modal encima de la vista -->
                 <transition>
                 <RecipeForm @close="showModal = false" />
                 </transition>
-            </modal>
+       </modal>
     </div><!-- Fin search -->
 </template>
 
@@ -26,17 +26,20 @@ export default {
   components: { 
       RecipeForm 
     },
+    props: { },
     name: 'SearchBar',
         data(){
             return {
-                showModal: false
+            showModal: false,
+             
             }
         },
         methods:{
             /*Aquest mètode s'encarregarà d'emetre un esdeveniment show-form. S’haurà
             d’executar quan es faci clic al botó “Add a new recipe”.*/
             showForm(){
-
+                this.$emit('show-Modal', false)
+                
             },
             /* Aquest mètode s'encarregarà de buidar l'element input del camp de cerca.
             S’haurà d’executar quan es faci clic al botó “Clear Search”.*/
@@ -50,6 +53,7 @@ export default {
             input del camp de cerca (cada vegada que es teclegi una lletra). Emetrà un esdeveniment
             'search' amb el contingut del camp de cerca*/
             search(newVal){
+                 
                  console.log(newVal);
             }
         }

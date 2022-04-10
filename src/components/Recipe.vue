@@ -1,7 +1,7 @@
 <template>
         <div class="recipe" :class="{ featured: recipe.featured }">
             <div class="estrella-recipe" v-show="recipe.featured"><img src="@/assets/ico/estrella.png" /></div>
-            <button class="delete-recipe" @click="deleteRecipe"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
+            <button class="delete-recipe" @click="deleteRecipe()"><img src="@/assets/img/delete-button.svg" alt="Eliminar" title="Eliminar"/></button>
             
             <h2 class=".recipe-title">{{ recipe.title }}</h2>
             <!-- <p>{{ recipe.featured }}</p> -->
@@ -50,9 +50,13 @@
             }
         },
         methods: {
+            /*Aquest mètode s'ha d'executar cada vegada que es fes clic al botó amb
+            la X. Haureu d'emetre els esdeveniments següents:
+                ○ delete-recipe(id): Esdeveniment encarregat d'informar que s'ha eliminat una
+                recepta. Indica l'identificador id de la recepta com a paràmetre.*/
             deleteRecipe () {
-                this.$emit("deleteRecipe");
-                console.log(this.recipe.id);
+                this.$emit("deleteRecipe", this.recipe.id);
+                console.log("Desde Recipe: "+this.recipe.id);
             },
         }
       };

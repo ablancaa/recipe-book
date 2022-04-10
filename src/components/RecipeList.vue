@@ -1,7 +1,7 @@
 <template>
 <div class="recipe-list">
     <div v-for="recipe in recipes" :key="recipe.id">
-        <Recipe :recipe="recipe"/>
+        <Recipe :recipe="recipe" @deleteRecipe="deleteRecipe"/>
     </div>
 </div>
 </template>
@@ -18,7 +18,10 @@ import Recipe from '@/components/Recipe.vue'
             }
         },
         methods:{
-            
+            deleteRecipe(id){
+                this.$emit("delete-recipe", id);
+                console.log("Desde list: "+id)
+            }
         },
     }
 </script>

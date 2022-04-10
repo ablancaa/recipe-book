@@ -3,11 +3,11 @@
         <form class="recipe-form">
             <div class="recipe-form-header">
                 <div class="close">
-                    <button @click="close"><img src="@/assets/img/close-button.svg"/></button>
+                    <button @click="closeForm"><img src="@/assets/img/close-button.svg"/></button>
                 </div><!-- close -->
                 <h2>Add a new recipe</h2>
                 <div id="error">
-                    <p>{{this.mensajeError}}</p>
+                    <p v-for="item in mensajeError" :key="item.id">{{ item }}</p>
                 </div>
             </div><!-- recipe-form-header -->
             <div class="recipe-form-item">
@@ -25,8 +25,14 @@
                         <option>Medium</option>
                         <option>Hard</option>
                     </select>
-                <label>Ingredients</label><input type="textarea"/>
-                <label>Directions</label><input type="textarea"/>
+                <label>Ingredients</label>
+                <input 
+                    v-model="ingredients"
+                    type="textarea"/>
+                <label>Directions</label>
+                <input 
+                    v-model="directions"
+                    type="textarea"/>
                 <label>Featured</label><input type="checkbox"/>
                 <div class="btn">
                 <button @click="createRecipe">Add Recipe</button></div>
@@ -37,6 +43,8 @@
 </template>
 
 <script>
+import { uuid } from 'vue-uuid'; 
+
     export default {
         name: 'RecipeForm',
         components: {
@@ -44,7 +52,8 @@
       props: { },
         data() {
             return{
-                destacada: true,
+                id: uuid,
+                destacada: '',
                 title: '',
                 imageUrl: '',
                 servings: '',
@@ -54,6 +63,7 @@
                 directions: '',
                 submit: '',
                 mensajeError: '',
+                recipe:[],
             }
         },
         mounted(){},
@@ -69,12 +79,35 @@
             ○ Emetre un esdeveniment add-recipe amb l'objecte creat.
             ○ Esborrar els camps del formulari.*/
             createRecipe(){
-                if(this.title == ''){
+                if(this.title == '' || this.ingredients == '' || this.directions == '') {
                     console.log("Titulo vacio!!");
-                    this.mensajeError='El título está vacío';
+                    console.log("Ingredientes Vacio!!");
+                    console.log("Indicaciones Vacio!!");
+                    //Pinta en pantalla
+                    var error = document.getElementById("error");
+                    error.innerHTML += 'El título está vacío <br/>';
+                    error.innerHTML += 'Los ingredientes está vacío <br/>';
+                    error.innerHTML += 'Las indicaciones está vacío <br/>';
                 } else {
+                    this.recipe.push({
+                        id: this.id, 
+                        title: this.title, 
+                        image: this.image, 
+                        servings: this.servings,
+                        time: this.time,
+                        difficulty: this.difficulty,
+                        ingredients: this.ingredients,
+                        directions: this.directions,
+                        featured: this.featured,
+                    });
+
+                    /*
+                    const data = JSON.stringify(this.recipe)
+                    window.localStorage.setItem('recipe', data);
+                    console.log("Muestra: "+JSON.parse(window.localStorage.getItem('recipe')))
                     console.log("Titulo: "+this.title);
-                }
+                    */
+                }//Fin else
             },
             /*Aquest mètode s'ha d'executar quan es faci clic al botó que conté el svg amb
             el símbol X. S'encarregarà de:
@@ -87,6 +120,9 @@
 </script>
 
 <style scoped>
+#error {
+    color: red;
+}
 .modal-container {
     position:fixed;
     top:0;left:0;
